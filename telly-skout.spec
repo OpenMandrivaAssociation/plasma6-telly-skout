@@ -27,6 +27,7 @@ BuildRequires:	cmake(KF5Kirigami2)
 BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(KF5UnitConversion)
 BuildRequires:	cmake(KF5Config)
+BuildRequires:	cmake(KF5Crash)
 BuildRequires:	cmake(KF5CoreAddons)
 BuildRequires:	bison
 BuildRequires:	flex
