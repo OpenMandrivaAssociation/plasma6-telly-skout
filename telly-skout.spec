@@ -3,7 +3,7 @@
 #define commit cc1ac2452e41873741c8b5f3fcafa29ae3ce5a30
 
 Name:		telly-skout
-Version:	23.08.0
+Version:	23.08.1
 Release:	%{?git:0.%{git}.}1
 Summary:	TV Guide for Plasma Mobile
 %if 0%{?git}
