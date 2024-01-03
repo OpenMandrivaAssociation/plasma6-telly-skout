@@ -4,7 +4,7 @@
 
 Name:		telly-skout
 Version:	23.08.4
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 Summary:	TV Guide for Plasma Mobile
 %if 0%{?git}
 Source0:	https://invent.kde.org/plasma-mobile/telly-skout/-/archive/v%{version}/telly-skout-v%{version}.tar.bz2
