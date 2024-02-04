@@ -3,8 +3,8 @@
 #define commit cc1ac2462e41873741c8b6f3fcafa29ae3ce6a30
 
 Name:		plasma6-telly-skout
-Version:	24.01.90
-Release:	%{?git:0.%{git}.}2
+Version:	24.01.95
+Release:	%{?git:0.%{git}.}1
 Summary:	TV Guide for Plasma Mobile
 %if 0%{?git}
 Source0:	https://invent.kde.org/plasma-mobile/telly-skout/-/archive/v%{version}/telly-skout-v%{version}.tar.bz2
