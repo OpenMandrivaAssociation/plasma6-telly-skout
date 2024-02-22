@@ -33,6 +33,7 @@ BuildRequires:	cmake(KF6UnitConversion)
 BuildRequires:	cmake(KF6Config)
 BuildRequires:	cmake(KF6Crash)
 BuildRequires:	cmake(KF6CoreAddons)
+BuildRequires:	cmake(KF6KirigamiAddons)
 BuildRequires:	bison
 BuildRequires:	flex
 BuildRequires:	pkgconfig(mpfr)
