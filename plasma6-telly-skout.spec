@@ -34,6 +34,7 @@ BuildRequires:	cmake(KF6Config)
 BuildRequires:	cmake(KF6Crash)
 BuildRequires:	cmake(KF6CoreAddons)
 BuildRequires:	cmake(KF6KirigamiAddons)
+BuildRequires:	cmake(KF6QQC2DesktopStyle)
 BuildRequires:	bison
 BuildRequires:	flex
 BuildRequires:	pkgconfig(mpfr)
