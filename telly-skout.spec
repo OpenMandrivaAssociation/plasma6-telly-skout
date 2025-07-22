@@ -4,7 +4,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 
 Name:		telly-skout
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Summary:	TV Guide for Plasma Mobile
 %if 0%{?git}
@@ -14,8 +14,6 @@ Source0:	https://download.kde.org/%{stable}/release-service/%{version}/src/telly
 %endif
 License:	GPLv3
 Group:		Applications/Productivity
-BuildRequires:	cmake
-BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt6Core)
 BuildRequires:	cmake(Qt6Core5Compat)
@@ -40,24 +38,15 @@ BuildRequires:	flex
 BuildRequires:	pkgconfig(mpfr)
 BuildRequires:	pkgconfig(gmp)
 
+%rename plasma6-telly-skout
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 TV Guide for Plasma Mobile
 
-%prep
-%autosetup -p1 -n telly-skout-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DQT_MAJOR_VERSION=6 \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja_build -C build
-
-%install
-%ninja_install -C build
-%find_lang telly-skout
-
-%files -f telly-skout.lang
+%files -f %{name}.lang
 %{_bindir}/telly-skout
 %{_datadir}/applications/org.kde.telly-skout.desktop
 %{_datadir}/metainfo/org.kde.telly-skout.appdata.xml
