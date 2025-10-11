@@ -4,7 +4,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 
 Name:		telly-skout
-Version:	25.08.1
+Version:	25.08.2
 Release:	%{?git:0.%{git}.}1
 Summary:	TV Guide for Plasma Mobile
 %if 0%{?git}
